@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&amp;family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+                  "outline-variant": "#c4c7c7",
+                  "on-secondary-container": "#726249",
+                  "primary": "#171818",
+                  "on-error": "#ffffff",
+                  "primary-container": "#2c2c2c",
+                  "on-primary": "#ffffff",
+                  "tertiary-fixed-dim": "#c9c7bc",
+                  "surface-container": "#efeeec",
+                  "on-primary-container": "#949393",
+                  "surface-bright": "#faf9f7",
+                  "tertiary-fixed": "#e5e2d8",
+                  "on-background": "#1a1c1b",
+                  "tertiary-container": "#2c2c25",
+                  "error-container": "#ffdad6",
+                  "surface-container-lowest": "#ffffff",
+                  "surface": "#faf9f7",
+                  "surface-container-highest": "#e3e2e0",
+                  "error": "#ba1a1a",
+                  "tertiary": "#181811",
+                  "inverse-on-surface": "#f1f1ef",
+                  "on-secondary-fixed-variant": "#53452e",
+                  "on-primary-fixed-variant": "#474747",
+                  "surface-container-high": "#e9e8e6",
+                  "surface-tint": "#5f5e5e",
+                  "on-tertiary-container": "#95938a",
+                  "background": "#faf9f7",
+                  "secondary-container": "#f6dfc0",
+                  "surface-container-low": "#f4f3f1",
+                  "secondary": "#6c5c44",
+                  "on-tertiary": "#ffffff",
+                  "primary-fixed": "#e4e2e1",
+                  "on-secondary-fixed": "#251a07",
+                  "on-surface-variant": "#444748",
+                  "surface-variant": "#e3e2e0",
+                  "surface-dim": "#dadad8",
+                  "on-primary-fixed": "#1b1c1c",
+                  "on-tertiary-fixed-variant": "#48473f",
+                  "secondary-fixed": "#f6dfc0",
+                  "secondary-fixed-dim": "#d9c4a5",
+                  "primary-fixed-dim": "#c8c6c5",
+                  "on-tertiary-fixed": "#1c1c15",
+                  "on-error-container": "#93000a",
+                  "on-secondary": "#ffffff",
+                  "on-surface": "#1a1c1b",
+                  "inverse-primary": "#c8c6c5",
+                  "outline": "#747878",
+                  "inverse-surface": "#2f3130"
+          },
+          "borderRadius": {
+                  "DEFAULT": "0.125rem",
+                  "lg": "0.25rem",
+                  "xl": "0.5rem",
+                  "full": "0.75rem"
+          },
+          "spacing": {
+                  "container-max": "1280px",
+                  "margin-mobile": "20px",
+                  "unit": "8px",
+                  "margin-desktop": "64px",
+                  "gutter": "32px",
+                  "section-gap": "120px"
+          },
+          "fontFamily": {
+                  "display-lg": ["EB Garamond"],
+                  "body-md": ["Hanken Grotesk"],
+                  "display-lg-mobile": ["EB Garamond"],
+                  "headline-md": ["EB Garamond"],
+                  "body-lg": ["Hanken Grotesk"],
+                  "button": ["Hanken Grotesk"],
+                  "label-caps": ["Hanken Grotesk"],
+                  "headline-sm": ["EB Garamond"]
+          },
+          "fontSize": {
+                  "display-lg": ["64px", {"lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "400"}],
+                  "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                  "display-lg-mobile": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "400"}],
+                  "headline-md": ["32px", {"lineHeight": "40px", "fontWeight": "400"}],
+                  "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                  "button": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "500"}],
+                  "label-caps": ["12px", {"lineHeight": "16px", "letterSpacing": "0.1em", "fontWeight": "600"}],
+                  "headline-sm": ["24px", {"lineHeight": "32px", "fontWeight": "500"}]
+          }
+        },
+      },
+    }
+  </script>
+</head>
+<body class="bg-surface text-on-surface selection:bg-secondary-fixed selection:text-on-secondary-fixed">
+<!-- Top Navigation Bar -->
+<header class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-md">
+<nav class="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-6 max-w-container-max mx-auto">
+<div class="font-display-lg text-headline-sm tracking-tight text-primary">STUDIO V</div>
+<!-- Desktop Navigation -->
+<div class="hidden md:flex gap-gutter items-center">
+<a class="font-button text-button text-on-surface-variant pb-1 hover:text-primary transition-colors duration-300" href="#">Home</a>
+<a class="font-button text-button text-primary border-b border-primary pb-1 transition-colors duration-300" href="#">Portfolio</a>
+<a class="font-button text-button text-on-surface-variant pb-1 hover:text-primary transition-colors duration-300" href="#">Services</a>
+<a class="font-button text-button text-on-surface-variant pb-1 hover:text-primary transition-colors duration-300" href="#">About</a>
+<a class="font-button text-button text-on-surface-variant pb-1 hover:text-primary transition-colors duration-300" href="#">Contact</a>
+</div>
+<button class="bg-primary text-on-primary px-6 py-2 font-button text-button hover:bg-secondary transition-all duration-300">
+        Inquire
+      </button>
+</nav>
+</header>
+<main class="pt-[140px]">
+<!-- Hero / Title Section -->
+<section class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto mb-section-gap">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-gutter">
+<div class="max-w-2xl">
+<span class="font-label-caps text-label-caps uppercase text-secondary tracking-widest block mb-4">Curated Environments</span>
+<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg mb-6 leading-tight">Selected Works</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant">A collection of architectural interiors where precision meets warmth. Each project is a dialogue between space, light, and the texture of living.</p>
+</div>
+</div>
+</section>
+<!-- Filter Bar -->
+<section class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto mb-16">
+<div class="flex flex-col md:flex-row gap-8 border-y border-outline-variant py-8">
+<div class="flex flex-col gap-3">
+<span class="font-label-caps text-label-caps text-on-surface-variant">ROOM TYPE</span>
+<div class="flex flex-wrap gap-2">
+<button class="px-4 py-1.5 rounded-lg bg-primary text-on-primary font-button text-button">All Rooms</button>
+<button class="px-4 py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high transition-colors font-button text-button">Kitchen</button>
+<button class="px-4 py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high transition-colors font-button text-button">Living</button>
+<button class="px-4 py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high transition-colors font-button text-button">Bedroom</button>
+</div>
+</div>
+<div class="md:w-px md:bg-outline-variant md:h-12 self-end hidden md:block"></div>
+<div class="flex flex-col gap-3">
+<span class="font-label-caps text-label-caps text-on-surface-variant">DESIGN STYLE</span>
+<div class="flex flex-wrap gap-2">
+<button class="px-4 py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high transition-colors font-button text-button">Modern</button>
+<button class="px-4 py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high transition-colors font-button text-button">Classic</button>
+<button class="px-4 py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high transition-colors font-button text-button">Minimalist</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Asymmetric Bento-Style Grid -->
+<section class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto mb-section-gap">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<!-- Project 01: Large Feature -->
+<div class="md:col-span-8 group cursor-pointer">
+<div class="relative overflow-hidden aspect-[16/10] bg-surface-container mb-6">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A sun-drenched minimalist living room featuring a low-profile charcoal sofa and a sculptural marble coffee table. Large floor-to-ceiling windows reveal a lush garden outside, while the interior uses a palette of soft oatmeal and warm sand tones. The lighting is natural and diffuse, highlighting the architectural precision and organic textures of the high-end space." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBg9WFhxLz1Y_NGCyxohHfYjTqGmq-OhFAOP_GBQIhW9Ywdzht3GWeW40-WlRriR13hK9BWUVsqaQ_eYHUJFeoGZtePyDtT_jRzAGFFpZVtP2n0xkd1QUxztMnJLeHsC-Z9YzKDfd-4E4pPny9HdoetU2v7PAwjFTFAVnMtkM5ACpuGSE_MLsMc6RAXOV9Lzngs62FOoCdwvS3dWVmebFkyLf0RpYYipJ1HvSAeLoKHAcHxlJP2rXclmvPdhL4lm4m_2OzRtrDNIl0r"/>
+<div class="absolute inset-0 bg-primary/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h3 class="font-headline-sm text-headline-sm mb-2">The Atrium House</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Modern · Living Room</p>
+</div>
+<div class="font-label-caps text-label-caps border border-outline-variant px-3 py-1">2023</div>
+</div>
+</div>
+<!-- Project 02: Vertical Accent -->
+<div class="md:col-span-4 group cursor-pointer md:mt-24">
+<div class="relative overflow-hidden aspect-[3/4] bg-surface-container mb-6">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A sophisticated kitchen detail showing custom dark walnut cabinetry paired with a monolithic white quartz island. Subtle brass hardware glints under recessed architectural lighting. The scene is styled with minimalist ceramics and a single branch in a tall glass vase, evoking a serene and timeless culinary environment with a professional, artistic feel." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAcTL7adWeEODB_iz-ODOBz2D9diCkhYMdBmhL327hQyCq2REziRZOcVmi82-946QaIs79t6TgLSgntmCiWGR25Z4xENejNURDCb1cQDG-oDuAQ277iGpAvg5uDJLV9zPAzoUI9XG1bU_BWrgVah-Suen1E1KzRKL9sZgvXrFY8XDPeY1EjUioFw8KeczKx3gR6GGExyI0QywAh9PDExxyykcWYtSzqqZvb5iQBr5KIUvtGp5ZXoYdd2vtwfbOiZwQGdPSz3ordP4AG"/>
+</div>
+<h3 class="font-headline-sm text-headline-sm mb-2">Heritage Kitchen</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Classic · Kitchen</p>
+</div>
+<!-- Project 03: Square Medium -->
+<div class="md:col-span-4 group cursor-pointer">
+<div class="relative overflow-hidden aspect-square bg-surface-container mb-6">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="An expansive master bedroom featuring a floating oak bed frame and layered linen textiles in monochromatic shades of bone and oatmeal. A soft, hand-woven rug anchors the space, while a minimalist wall-mounted light provides a warm glow against the textured lime-wash walls. The atmosphere is one of profound calm and understated luxury." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDuUhEzkBBJH5Oo__cgJKBtCFtrwRQHlGXCHnLv-cQkUwuoZPelYvfg37v-UrLOk8ED-Lddo1vN4K9YDsVncH-M5GcNCciGWBeDE-QxkQWRxSKSjPuGpjloneHbegyZzKSGI4H8hS_kOBpCNfe2bsc-2ZweW7mtmDiwM2b36pVnxttnJY3UIfpPfKF39y9WM5lKShKnLWSD3UnBSyWLjnG_NFri4njRY4QXYvoojwOFy2M_tWG7aTa6X1tvCrd8WC4JIcx_EZPdL8ur"/>
+</div>
+<h3 class="font-headline-sm text-headline-sm mb-2">Serene Suite</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Modern · Bedroom</p>
+</div>
+<!-- Project 04: Landscape Feature -->
+<div class="md:col-span-8 group cursor-pointer md:-mt-24">
+<div class="relative overflow-hidden aspect-[16/9] bg-surface-container mb-6">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A grand open-plan living and dining area in a contemporary penthouse. The design features a bold charcoal accent wall and architectural lighting tracks. Designer furniture pieces are arranged to create an intimate yet expansive social space. High-key lighting from massive windows creates a bright, airy aesthetic with sharp shadows that emphasize the spatial clarity." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCplgvd7o-IgH4ZPyiKcV4ih9Tqjg9kPAYUAy1ywZop8jhVU9LEoyjXYiAr9YqO54NJ-r11WQ8sWEf-sOuprjtIsNkmSSMXRMpfymdZh8NDMzUB00i7Vkou6L_iQH3AHQu9AU1B4FYtxHC43lFtpXDjdVPIvc9BRyQPsuHXrJpxnXFp8QsYjk6Fg1ZJD0E0fknWaDJzxkM1CNBWYebvUr0c-OIi8UlXQ54Wb6pxQY819YYb-TT5hBNGQpNMut_I2tPur_6DUkH4u6R6"/>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h3 class="font-headline-sm text-headline-sm mb-2">The Penthouse Loft</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Modern · Living Room</p>
+</div>
+<div class="font-label-caps text-label-caps border border-outline-variant px-3 py-1">2024</div>
+</div>
+</div>
+<!-- Project 05: Compact Vertical -->
+<div class="md:col-span-6 group cursor-pointer">
+<div class="relative overflow-hidden aspect-[4/5] bg-surface-container mb-6">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A minimalist bathroom featuring a monolithic stone vanity and a freestanding sculptural bathtub. The walls are finished in a soft, matte sand-colored plaster that catches the gentle morning light. A single, tall plant adds a touch of organic life to the precise, architectural lines of the space. The design is modern, clean, and spa-like." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCwmViR13A2-zStzDPNNw6qzqfz2D3uq1c3Ie9qHD1s3hG56BgKpPjR7mwctlgNLZCHrlUb3HS-aHT4qQb4Y7kO-dIg1ciIsAmzTiLgB_zGULFov9PQsgdJZMIJfDNDfpqgy-Eknq_pJD4pWNGcBsXkWDqN9N_7v4aKreDaZ0vHqgd4i5mPoNTb1JbqtwQSvs0m-e7LECHqocz03wABAcKuM_aTlhGB1U169PNK1TrzgLWJlnFBJzDufBk98tqRrJwx7ttSnWYgx-W9"/>
+</div>
+<h3 class="font-headline-sm text-headline-sm mb-2">Monolith Bath</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Minimalist · Bathroom</p>
+</div>
+<!-- Project 06: Compact Vertical Offset -->
+<div class="md:col-span-6 group cursor-pointer md:mt-24">
+<div class="relative overflow-hidden aspect-[4/5] bg-surface-container mb-6">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A cozy yet sophisticated reading nook featuring a vintage leather armchair and a built-in dark wood bookshelf. The lighting is moody and focused, with a sleek designer floor lamp casting a warm pool of light. The space is a blend of classic elegance and modern intentionality, utilizing a rich palette of charcoal, sand, and deep wood tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBF8XUgB_m9GkhaugkhNwkmrwGO1a89ua3K3ZPbX6djBdiLrUwdfHYL7TOASr-5masfqZtoC5NrzDrF24JlzyNq2WRhxVkGisdaxJWv0euD7MxvS37RWzywXaz0ij7QUCNnOZbT5leeLpfyoZCbH4Ub0xY4zkgbUbGUHk5G-ky5T0UJDg61wQMn5Ub4Ey1I4L2aAss517W-9eWCBvk3vX_Mgvl8EbOq_tz1kzsltMzmIBGGz1HeLq3en9uu_k4mqoOWzkRugX5ki8OS"/>
+</div>
+<h3 class="font-headline-sm text-headline-sm mb-2">The Archive Study</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Classic · Library</p>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="bg-surface-container py-section-gap">
+<div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto text-center">
+<h2 class="font-display-lg text-headline-md md:text-headline-md mb-8">Have a project in mind?</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-12 max-w-xl mx-auto">Let's collaborate to create a space that reflects your vision and enhances your daily ritual.</p>
+<button class="bg-primary text-on-primary px-10 py-4 font-button text-button hover:bg-secondary transition-all duration-300">
+          Book a Consultation
+        </button>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container dark:bg-primary-container w-full py-section-gap">
+<div class="flex flex-col md:flex-row justify-between items-start md:items-center px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto gap-gutter">
+<div class="flex flex-col gap-4">
+<div class="font-display-lg text-headline-md text-primary dark:text-on-primary">STUDIO V</div>
+<p class="font-body-md text-body-md text-on-surface-variant dark:text-on-primary-container max-w-xs">Elevating the everyday through intentional design and architectural clarity.</p>
+</div>
+<div class="flex flex-col md:flex-row gap-gutter">
+<div class="flex flex-col gap-2">
+<span class="font-label-caps text-label-caps text-secondary mb-2">SITEMAP</span>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-on-primary-container hover:text-secondary transition-colors duration-300" href="#">Portfolio</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-on-primary-container hover:text-secondary transition-colors duration-300" href="#">Services</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-on-primary-container hover:text-secondary transition-colors duration-300" href="#">About</a>
+</div>
+<div class="flex flex-col gap-2">
+<span class="font-label-caps text-label-caps text-secondary mb-2">CONNECT</span>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-on-primary-container hover:text-secondary transition-colors duration-300" href="#">Instagram</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-on-primary-container hover:text-secondary transition-colors duration-300" href="#">Pinterest</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-on-primary-container hover:text-secondary transition-colors duration-300" href="#">Inquiries</a>
+</div>
+</div>
+</div>
+<div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto mt-20 pt-8 border-t border-outline-variant flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="font-body-md text-body-md text-on-surface-variant dark:text-on-primary-container">© 2024 STUDIO V INTERIOR DESIGN. ALL RIGHTS RESERVED.</p>
+<div class="flex gap-6">
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-on-primary-container hover:text-secondary transition-colors duration-300" href="#">Privacy Policy</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-on-primary-container hover:text-secondary transition-colors duration-300" href="#">Terms of Service</a>
+</div>
+</div>
+</footer>
+</body></html>

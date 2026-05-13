@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Studio V | Project Detail</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;700&amp;family=Hanken+Grotesk:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        .masonry-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 32px;
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "outline-variant": "#c4c7c7",
+                        "on-secondary-container": "#726249",
+                        "primary": "#171818",
+                        "on-error": "#ffffff",
+                        "primary-container": "#2c2c2c",
+                        "on-primary": "#ffffff",
+                        "tertiary-fixed-dim": "#c9c7bc",
+                        "surface-container": "#efeeec",
+                        "on-primary-container": "#949393",
+                        "surface-bright": "#faf9f7",
+                        "tertiary-fixed": "#e5e2d8",
+                        "on-background": "#1a1c1b",
+                        "tertiary-container": "#2c2c25",
+                        "error-container": "#ffdad6",
+                        "surface-container-lowest": "#ffffff",
+                        "surface": "#faf9f7",
+                        "surface-container-highest": "#e3e2e0",
+                        "error": "#ba1a1a",
+                        "tertiary": "#181811",
+                        "inverse-on-surface": "#f1f1ef",
+                        "on-secondary-fixed-variant": "#53452e",
+                        "on-primary-fixed-variant": "#474747",
+                        "surface-container-high": "#e9e8e6",
+                        "surface-tint": "#5f5e5e",
+                        "on-tertiary-container": "#95938a",
+                        "background": "#faf9f7",
+                        "secondary-container": "#f6dfc0",
+                        "surface-container-low": "#f4f3f1",
+                        "secondary": "#6c5c44",
+                        "on-tertiary": "#ffffff",
+                        "primary-fixed": "#e4e2e1",
+                        "on-secondary-fixed": "#251a07",
+                        "on-surface-variant": "#444748",
+                        "surface-variant": "#e3e2e0",
+                        "surface-dim": "#dadad8",
+                        "on-primary-fixed": "#1b1c1c",
+                        "on-tertiary-fixed-variant": "#48473f",
+                        "secondary-fixed": "#f6dfc0",
+                        "secondary-fixed-dim": "#d9c4a5",
+                        "primary-fixed-dim": "#c8c6c5",
+                        "on-tertiary-fixed": "#1c1c15",
+                        "on-error-container": "#93000a",
+                        "on-secondary": "#ffffff",
+                        "on-surface": "#1a1c1b",
+                        "inverse-primary": "#c8c6c5",
+                        "outline": "#747878",
+                        "inverse-surface": "#2f3130"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "container-max": "1280px",
+                        "margin-mobile": "20px",
+                        "unit": "8px",
+                        "margin-desktop": "64px",
+                        "gutter": "32px",
+                        "section-gap": "120px"
+                    },
+                    "fontFamily": {
+                        "display-lg": ["EB Garamond"],
+                        "body-md": ["Hanken Grotesk"],
+                        "display-lg-mobile": ["EB Garamond"],
+                        "headline-md": ["EB Garamond"],
+                        "body-lg": ["Hanken Grotesk"],
+                        "button": ["Hanken Grotesk"],
+                        "label-caps": ["Hanken Grotesk"],
+                        "headline-sm": ["EB Garamond"]
+                    },
+                    "fontSize": {
+                        "display-lg": ["64px", {"lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "400"}],
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "display-lg-mobile": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "400"}],
+                        "headline-md": ["32px", {"lineHeight": "40px", "fontWeight": "400"}],
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "button": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "500"}],
+                        "label-caps": ["12px", {"lineHeight": "16px", "letterSpacing": "0.1em", "fontWeight": "600"}],
+                        "headline-sm": ["24px", {"lineHeight": "32px", "fontWeight": "500"}]
+                    }
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background text-on-surface selection:bg-secondary-container selection:text-on-secondary-container">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-md">
+<div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-6 max-w-container-max mx-auto">
+<span class="font-display-lg text-headline-sm tracking-tight text-primary">STUDIO V</span>
+<div class="hidden md:flex items-center gap-8">
+<a class="font-button text-button text-on-surface-variant pb-1 hover:text-primary transition-colors duration-300" href="#">Home</a>
+<a class="font-button text-button text-primary border-b border-primary pb-1 transition-colors duration-300" href="#">Portfolio</a>
+<a class="font-button text-button text-on-surface-variant pb-1 hover:text-primary transition-colors duration-300" href="#">Services</a>
+<a class="font-button text-button text-on-surface-variant pb-1 hover:text-primary transition-colors duration-300" href="#">About</a>
+<a class="font-button text-button text-on-surface-variant pb-1 hover:text-primary transition-colors duration-300" href="#">Contact</a>
+</div>
+<button class="font-button text-button px-6 py-2 bg-primary text-on-primary hover:bg-secondary transition-all duration-300">
+                Inquire
+            </button>
+</div>
+</nav>
+<main class="pt-24">
+<!-- Hero Section -->
+<section class="relative w-full h-[819px] overflow-hidden bg-surface-container-highest">
+<img alt="The Ethereal Penthouse Living Room" class="w-full h-full object-cover" data-alt="A high-end luxury penthouse living room featuring massive floor-to-ceiling windows overlooking a misty urban skyline. The interior is defined by a curated selection of minimalist furniture in oatmeal and charcoal tones, resting on a textured bone-colored rug. Soft afternoon sunlight filters through sheer linen curtains, casting long shadows across the architectural space. The aesthetic is clean and modern, highlighting the sophisticated, serene atmosphere of the home." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBwg1pdGtL4vaJpgL1iH5PN8tA2DTCFe3qZGwdAQOt51VjGVVWLodxpFwgW-OFLNQ4-eMNMxO1ZS5mB23Y6dm2OgQSmD4qr5OCDMVG9DQp1r4YD9-bRs7rt8t6MWtrhNkSF8KJhjotVTzegL5ZDI7gcyuAvJe3Ut_HaV_pRP9n6L-ezmo2ZT37hUBWfUT5qrDfwb-UDkS0l4-08xewaPsWN0J0ViLBwbfX9miubPDuovyZIJRHSpTPggnwRB4hFUZ0e9J6k3ipMfhpR"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/40 to-transparent flex items-end">
+<div class="px-margin-mobile md:px-margin-desktop pb-section-gap max-w-container-max mx-auto w-full">
+<span class="font-label-caps text-label-caps text-on-primary/80 mb-4 block">RESIDENTIAL · 2024</span>
+<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-on-primary max-w-3xl">The Ethereal Penthouse: A Study in Light &amp; Texture</h1>
+</div>
+</div>
+</section>
+<!-- Project Overview & Narrative -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<div class="md:col-span-4 border-l border-outline-variant pl-8 mb-12 md:mb-0">
+<h3 class="font-label-caps text-label-caps text-on-surface-variant mb-6 uppercase tracking-[0.2em]">Project Details</h3>
+<div class="space-y-6">
+<div>
+<p class="font-label-caps text-label-caps text-secondary mb-1">LOCATION</p>
+<p class="font-body-md text-body-md">Chelsea, New York City</p>
+</div>
+<div>
+<p class="font-label-caps text-label-caps text-secondary mb-1">SCOPE</p>
+<p class="font-body-md text-body-md">Full Renovation &amp; Furnishing</p>
+</div>
+<div>
+<p class="font-label-caps text-label-caps text-secondary mb-1">CLIENT</p>
+<p class="font-body-md text-body-md">Private Art Collector</p>
+</div>
+</div>
+</div>
+<div class="md:col-span-8">
+<h2 class="font-headline-md text-headline-md mb-8 text-primary">The Vision</h2>
+<div class="font-body-lg text-body-lg text-on-surface-variant space-y-6 max-w-2xl">
+<p>For this 3,400 square foot penthouse, the objective was to create a sanctuary that felt both expansive and intimate. We moved away from the typical 'white box' luxury aesthetic, instead embracing a tonal hierarchy of bone, charcoal, and sand.</p>
+<p>The design narrative centers on "tactile minimalism"—a philosophy where every surface invites touch, from the hand-applied plaster walls to the reclaimed timber accents. By stripping away visual noise, we allowed the client's significant contemporary art collection to breathe, creating a gallery-like experience that remains fundamentally a home.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Before & After Comparison -->
+<section class="bg-surface-container py-section-gap overflow-hidden">
+<div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="text-center mb-16">
+<h2 class="font-headline-md text-headline-md text-primary mb-4">Metamorphosis</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">The transition from a dated industrial loft to a refined residential sanctuary.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch">
+<div class="group relative overflow-hidden bg-surface-dim">
+<img alt="Before Renovation" class="w-full h-[500px] object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-500" data-alt="A dark, dated industrial loft space with exposed wires, scuffed concrete floors, and peeling paint. The lighting is harsh and uneven, coming from old fluorescent fixtures. The space is cluttered with construction debris and old metal scaffolding, presenting a stark contrast to a finished luxury interior. The mood is raw, gritty, and neglected." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA94nx7SnaAkZQXLc3V7rToC7inzoH2wqHhDO9rpPFS0tI3SliXjYsUFJCLrGN1aHtWBIesRFFStmXc7TjLgna2yoWSjmNRxMHMadtlqOrkJGpg_CV8tVAywTbGIw-JVd071FPPj95VT_wPEmLNk05HeUrANv0cfy_zXBpTiynvtoB0jfHeKkgnZYtRMyA85Kbm7s9FxLI7gSROuh7dCfGIs6BB3jSHnd_vxRxb0IUFVPwK5T2Y64lAj93AZkh0JEvQqZBkw1Wo3xPt"/>
+<div class="absolute top-6 left-6 bg-primary/20 backdrop-blur-sm px-4 py-1">
+<span class="font-label-caps text-label-caps text-on-primary">BEFORE</span>
+</div>
+</div>
+<div class="group relative overflow-hidden bg-surface-bright">
+<img alt="After Renovation" class="w-full h-[500px] object-cover group-hover:scale-105 transition-transform duration-700" data-alt="The transformed interior design of the previous industrial loft, now a bright and sophisticated kitchen and dining area. Smooth, hand-applied plaster walls in a warm bone white finish complement bespoke dark oak cabinetry. The floors are now wide-plank light wood, and the lighting is soft and recessed. A large marble island stands as the centerpiece under sculptural pendant lights, radiating a calm and expensive minimalist aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCueIOUbz-A0bBJG5D69rdLLCwfRbYCTVJehAbGT257COCk1aXgV69k2h60E_OcUHd8ztsKxS-F6EXGDMnnmIqOlZL4cJVV7jvAI61Td9mMH9-j9N0UZ4wrWsZ0KppzYM3xuUp2uw36cJAVj7AsSGm3QYa-YFQj-ttJtTAUdoueFIu1-X-E496E6GhrmIR0mu3XAo9_8T3tcKOoeIy0dxD0GDh22Apjua1GUqepVWwC-uiCqNmJYP3G60ou76dWkqD6yUiQdU8-DfEe"/>
+<div class="absolute top-6 left-6 bg-primary px-4 py-1">
+<span class="font-label-caps text-label-caps text-on-primary">AFTER</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Material & Color Palette Section (Bento Style) -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="mb-16">
+<h2 class="font-headline-md text-headline-md text-primary">The Materiality</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">A curated selection of tactile elements defining the project's soul.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 grid-rows-2 gap-4 h-auto md:h-[600px]">
+<!-- Color 1 -->
+<div class="bg-[#F9F8F6] p-8 flex flex-col justify-end border border-outline-variant/30">
+<span class="font-label-caps text-label-caps text-on-surface-variant mb-2">BONE</span>
+<p class="font-body-md text-body-md text-on-surface-variant opacity-70">Main Wall Finish</p>
+</div>
+<!-- Material 1 -->
+<div class="md:col-span-2 relative overflow-hidden bg-surface-container">
+<img alt="Italian Travertine Texture" class="w-full h-full object-cover" data-alt="A macro close-up of a slab of premium Italian Travertine stone. The surface is textured with natural pits and subtle linear veining in shades of cream, beige, and soft tan. The lighting is directional, emphasizing the depth and tactile quality of the natural stone. The overall feel is organic, architectural, and timelessly luxurious, showcasing the raw beauty of natural materials." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAR3KHU-ZIPvX6-w3EBzZZGmM0t8xWZrGPLbjjRVZkWcNmFwiysAv50IrwuLYoQpBYx0SEaGwWESTqDbaMMs5JPo30QNbOHb4Ywb1h0FRpySL8aixxmAPRU9Vm5-Lj-f-ggZl5SiNQQ4_xMwiOJ8Psvh_YlOqLr55fapVRabgI1_QNaEPzmuf7-uwDoM1UamE42rkqK485RICXVaIl3fuocfmCoNM8hjalTKz1eS8bWctlOfX-1L7sXtBHq4TcAtqjwmlbJq9yQVF2E"/>
+<div class="absolute inset-0 bg-primary/10 hover:bg-transparent transition-colors duration-500"></div>
+<div class="absolute bottom-6 left-6">
+<p class="font-label-caps text-label-caps text-on-primary bg-primary/40 backdrop-blur-sm px-3 py-1">TRAVERTINE NORE</p>
+</div>
+</div>
+<!-- Color 2 -->
+<div class="bg-[#2C2C2C] p-8 flex flex-col justify-end">
+<span class="font-label-caps text-label-caps text-on-primary mb-2">CHARCOAL</span>
+<p class="font-body-md text-body-md text-on-primary opacity-60">Architectural Accents</p>
+</div>
+<!-- Material 2 -->
+<div class="md:col-span-2 relative overflow-hidden bg-surface-container">
+<img alt="Brushed Walnut Grain" class="w-full h-full object-cover" data-alt="A detailed view of brushed black walnut wood grain. The texture is rich and deep, with visible swirls and natural imperfections that give it a unique character. The wood has a matte finish that absorbs light, creating a sophisticated and warm atmosphere. This image captures the essence of organic modernism through high-quality cabinetry materials." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDKGVj9XaMj4kQmcpXMgvYMt4QGFO9dy87JG3QEQyBBBGb6PzyPONiHgNDKmV04ty5qWxN9Dx97NzQcanQ04c-Bfqd354S7t0e5RKWTHupYncRzOpiZbUiuoFJNy8w_BGukcJol_I-t-uVzy_rE1La_48y2QZ6XHBuMQpvtJSvPzHxdq2TLZHOqIe7xGqxVUDqO97rfEs2avamZVisKjSyKsySWcNGZucWG4q2_TZGeZsPok6bX_w13inXLHtz8UKFKoE19QmJNFCfU"/>
+<div class="absolute bottom-6 left-6">
+<p class="font-label-caps text-label-caps text-on-primary bg-primary/40 backdrop-blur-sm px-3 py-1">BRUSHED WALNUT</p>
+</div>
+</div>
+<!-- Color 3 -->
+<div class="bg-[#D8C3A5] p-8 flex flex-col justify-end">
+<span class="font-label-caps text-label-caps text-on-surface-variant mb-2">SAND</span>
+<p class="font-body-md text-body-md text-on-surface-variant opacity-70">Textile Palette</p>
+</div>
+<!-- Material 3 -->
+<div class="relative overflow-hidden bg-surface-container">
+<img alt="Belgian Linen" class="w-full h-full object-cover" data-alt="A close-up shot of heavy-weight Belgian linen fabric in a warm oatmeal shade. The weave is visible and slightly irregular, showcasing its natural origin. Soft light creates gentle folds in the fabric, highlighting its soft yet durable texture. This material represents the comfortable, lived-in luxury core to the Studio V design philosophy." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDn-UVSH0l4DX3MnxKIsf07c-o66S8O5cP-7NAHRvf8EXGLV_bGd5S1w8u3Fv0bOu1Qj_26aKps0yf-S5SYJp5X90YEFPf5RQ_zCdYyBICaARdXQuAWPgmMx0C78439GRA7iOiG7nkQAWDuGAbXEaSFQ7HWBtip657CR0INOVPfilbkPvPbHhCD_U0oZrDXNZhZZKpJbk9AKFr2SUJvLgQDrcTqC5BhvSLvBBw2Mo1lhCTR7okG5I05rD9QTw6TCW6SEM5tqsvER7yl"/>
+<div class="absolute bottom-6 left-6">
+<p class="font-label-caps text-label-caps text-on-primary bg-primary/40 backdrop-blur-sm px-3 py-1">RAW LINEN</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Project Gallery (Asymmetric) -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
+<div class="md:col-span-7 aspect-[4/5] overflow-hidden bg-surface-container">
+<img alt="Penthouse Master Bedroom" class="w-full h-full object-cover hover:scale-105 transition-transform duration-1000" data-alt="A serene master bedroom suite designed with a monochromatic palette of creams and sands. A low-profile upholstered bed sits against a feature wall of light-colored textured plaster. Minimalist bedside tables in dark wood hold architectural lamps. The floor is covered in a plush, high-pile wool rug that adds warmth and comfort to the clean, modern space. Large windows allow natural light to fill the room, emphasizing a calm and restful mood." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC70EuYhkdmYKFGN2DJCb924tq9Ug_nBnfQbh8u4bBzaA20Ha7QakGSX-XCJffSXxaaoxWJg09jf0XFFLwuQtL-YZkeOoKFhtbnnWCTMkFjXGTOe6IkIsggOr3VLytcOjbwii1spSriTXTkhZFCi4T5jb33vPAiK_DCAnYMnv651aKIjndBJ8muSWjPhGHc4aE4iAoY7LW1lAHTnS9jAZSAIOt9vl0yqaXpXGvUdTTazPoNc1_w5xuonKcxT7oGxWUin8AJL2x4fbvU"/>
+</div>
+<div class="md:col-span-5 pt-0 md:pt-32 space-y-8">
+<div class="aspect-square overflow-hidden bg-surface-container">
+<img alt="Luxury Bathroom Detail" class="w-full h-full object-cover hover:scale-105 transition-transform duration-1000" data-alt="A luxurious bathroom detail featuring a freestanding matte white bathtub placed against a wall of book-matched marble. The floor is a continuous surface of large-format stone tiles. Minimalist black fixtures provide a sharp, modern contrast to the organic patterns of the marble. Soft, ambient lighting creates a spa-like atmosphere that is both clean and indulgent." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDGsMqP3yUkLNqYXpGixd2qHIyZkjhvc4i68dBSAltNoCxoVb34FBk4buSZC5aWqaWAcl1Mp2Tz7SN3vcBO21WykfwL65wc8PDsE4-i44MpDuOX674rkWHAWtFmGMTMPsc-nnUtU0mvhFskKFqHjUAb8h8FtV5eO5AQ9fhR00UVmdovXqH0nABwpX8C841Ttmem4HcWXOqoh4Cl7J2z5BaXqL0cyxoxNhkXTDNCMGVYsKXWJMRIjpDJq42C41QhCdT44ZzV85Ip2CYu"/>
+</div>
+<div class="bg-surface-container-low p-12 border-t-2 border-secondary">
+<span class="material-symbols-outlined text-secondary text-4xl mb-4">format_quote</span>
+<p class="font-display-lg text-headline-sm italic text-primary leading-tight mb-6">"Studio V didn't just design a house; they curated a feeling. Every morning when the light hits the plaster, I'm reminded why we chose them."</p>
+<p class="font-label-caps text-label-caps text-secondary">— ELENA R., HOMEOWNER</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Next Project Preview -->
+<section class="py-section-gap border-t border-outline-variant/30 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto text-center">
+<p class="font-label-caps text-label-caps text-on-surface-variant mb-4 uppercase tracking-[0.3em]">Next Project</p>
+<a class="group inline-block" href="#">
+<h2 class="font-display-lg text-display-lg-mobile md:text-display-lg text-primary hover:text-secondary transition-colors duration-300">The Obsidian Villa</h2>
+<div class="h-1 w-0 group-hover:w-full bg-secondary mx-auto transition-all duration-500 mt-2"></div>
+</a>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container w-full py-section-gap">
+<div class="flex flex-col md:flex-row justify-between items-start md:items-center px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto gap-gutter">
+<div class="flex flex-col gap-4">
+<span class="font-display-lg text-headline-md text-primary">STUDIO V</span>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xs opacity-80">Defining the intersection of architectural precision and organic warmth.</p>
+</div>
+<div class="flex flex-wrap gap-8 mt-8 md:mt-0">
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors duration-300" href="#">Privacy Policy</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors duration-300" href="#">Terms of Service</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors duration-300" href="#">Inquiries</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors duration-300" href="#">Instagram</a>
+</div>
+<div class="w-full md:w-auto mt-12 md:mt-0 border-t md:border-0 border-outline-variant pt-8 md:pt-0">
+<p class="font-body-md text-body-md text-on-surface-variant opacity-60">© 2024 STUDIO V INTERIOR DESIGN. ALL RIGHTS RESERVED.</p>
+</div>
+</div>
+</footer>
+</body></html>
